@@ -1,16 +1,29 @@
 # Chat exporter
 
-Save your ChatGPT, Claude, and Venice chats in one go, to a file on your own device, and bring them to [Morse](https://trymorse.ai).
+**Export your ChatGPT, Claude and Venice chats to a file on your own device, in one click, with a script that runs only in your browser.**
 
-Each app has a script of its own. Run it on the site you're leaving, and it reads only that site.
+Then, if you like, bring them to [Morse](https://trymorse.ai/?src=gh-exporter), a private AI chat app with every top model in one place, where your chats stay encrypted on your device.
 
-| Script | Run it on | Steps |
-| --- | --- | --- |
-| [`chatgpt-exporter.js`](chatgpt-exporter.js) | chatgpt.com, on a computer | [trymorse.ai/import#chatgpt](https://trymorse.ai/import#chatgpt) |
-| [`claude-exporter.js`](claude-exporter.js) | claude.ai, on a computer | [trymorse.ai/import#claude](https://trymorse.ai/import#claude) |
-| [`venice-exporter.js`](venice-exporter.js) | venice.ai, on a computer or a phone | [trymorse.ai/import#venice](https://trymorse.ai/import#venice) |
+## Quick start
 
-Each file here is the exact file trymorse.ai serves under the same name (for example https://trymorse.ai/chatgpt-exporter.js), and the script behind that app's Export for Morse bookmark on [trymorse.ai/import](https://trymorse.ai/import).
+1. Open [trymorse.ai/import](https://trymorse.ai/import?src=gh-exporter) on a computer and pick the app you're leaving.
+2. Drag its **Export for Morse** bookmark to your bookmarks bar (or copy the script into your browser's console).
+3. Open the app you're leaving, signed in, and click the bookmark. Your chats download as a file.
+4. Optional: import the file at [trymorse.ai/import](https://trymorse.ai/import?src=gh-exporter). You don't need a Morse account to save it.
+
+## What it exports
+
+| App | Run it on | What comes with your chats | Steps |
+| --- | --- | --- | --- |
+| ChatGPT | chatgpt.com, on a computer | projects, custom instructions, memories, uploads and generated images | [trymorse.ai/import#chatgpt](https://trymorse.ai/import?src=gh-exporter#chatgpt) |
+| Claude | claude.ai, on a computer | projects, styles, memories, artifacts and uploaded files | [trymorse.ai/import#claude](https://trymorse.ai/import?src=gh-exporter#claude) |
+| Venice | venice.ai, on a computer or a phone | folders, characters, Minds, Studio work and generated media | [trymorse.ai/import#venice](https://trymorse.ai/import?src=gh-exporter#venice) |
+
+Each app has a script of its own ([`chatgpt-exporter.js`](chatgpt-exporter.js), [`claude-exporter.js`](claude-exporter.js), [`venice-exporter.js`](venice-exporter.js)). Each file here is the exact file trymorse.ai serves under the same name (for example https://trymorse.ai/chatgpt-exporter.js), and the script behind that app's Export for Morse bookmark. Morse's import also takes exports from other apps; the [import page](https://trymorse.ai/import?src=gh-exporter) lists them.
+
+## Privacy
+
+Nothing leaves your browser. The script reads the site you're leaving with your own signed-in session, never changes or deletes anything, builds the file in your browser and saves it as a download. Nothing is sent to Morse. You can check the files trymorse.ai serves against this repo (see [Check it yourself](#check-it-yourself)).
 
 ## What every exporter does
 
